@@ -1,4 +1,5 @@
 # Using Cloud PubSub with Cloud Run [APPRUN]
+## Run in cloudshell
 ```cmd
 export REGION=
 ```

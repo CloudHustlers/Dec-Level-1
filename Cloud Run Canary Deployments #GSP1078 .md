@@ -78,6 +78,7 @@ EOF
 git add . && git commit -m "updated" && git push gcp new-feature-1
 ```
 ### Go to search > cloud build > and wait till all build are complted [DON'T RUN NEXT COMMAND TILL ALL THE BUILDS ARE COMPLETED]
+### If got error in any build click that build and click retry
 ```cmd
 gcloud beta builds triggers create cloud-source-repositories --trigger-config master-trigger.json
 git checkout master
@@ -85,10 +86,12 @@ git merge new-feature-1
 git push gcp master
 ```
 ### Go to search > cloud build > and wait till all build are complted [DON'T RUN NEXT COMMAND TILL ALL THE BUILDS ARE COMPLETED]
+### If got error in any build click that build and click retry
 ```cmd
 gcloud beta builds triggers create cloud-source-repositories --trigger-config tag-trigger.json
 git tag 1.1
 git push gcp 1.1
 ```
 ### Go to search > cloud build > and wait till all build are complted [DON'T RUN NEXT COMMAND TILL ALL THE BUILDS ARE COMPLETED]
+### If got error in any build click that build and click retry
 ### Check the progress of all tasks
